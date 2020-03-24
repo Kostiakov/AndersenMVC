@@ -2,8 +2,7 @@
 <head>
 </head>
 <body>
-Hello world
 <br>
-<a href="form">To the form</a>
+<a href="form">Show all literature</a>
 </body>
 </html>

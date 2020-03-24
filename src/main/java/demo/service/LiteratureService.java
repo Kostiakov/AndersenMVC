@@ -1,10 +1,10 @@
-package demo.dao;
+package demo.service;
 
 import java.util.List;
 
 import demo.entity.LiteratureNew;
 
-public interface LiteratureDAO {
+public interface LiteratureService {
 	
 	public List<LiteratureNew> getLiterature();
 
