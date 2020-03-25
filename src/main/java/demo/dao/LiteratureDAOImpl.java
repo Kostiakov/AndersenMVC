@@ -24,4 +24,18 @@ public class LiteratureDAOImpl implements LiteratureDAO {
 		return customers;
 	}
 
+	@Override
+	public void addLiterature(LiteratureNew theLiterature) {
+		Session currSession = factory.getCurrentSession();
+		currSession.saveOrUpdate(theLiterature);
+		
+	}
+
+	@Override
+	public void deleteLiterature(int theId) {
+		Session currSession = factory.getCurrentSession();
+		LiteratureNew theLiterature=currSession.get(LiteratureNew.class, theId);
+		currSession.delete(theLiterature);
+	}
+
 }

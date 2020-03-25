@@ -21,4 +21,17 @@ public class LiteratureServiceImpl implements LiteratureService {
 		return literatureDAO.getLiterature();
 	}
 
+	@Transactional
+	@Override
+	public void addLiterature(LiteratureNew theLiterature) {
+		literatureDAO.addLiterature(theLiterature);
+	}
+
+	@Transactional
+	@Override
+	public void deleteLiterature(int theId) {
+		literatureDAO.deleteLiterature(theId);
+		
+	}
+
 }
